@@ -47,7 +47,7 @@ export default class PagerDotIndicator extends Component {
             let isSelect = i === this.state.selectedIndex
             dotsView.push(
                 <View
-                    style={[styles.dot, isSelect ? styles.selectDot : null, isSelect ? selectedDotStyle : dotStyle]}
+                    style={[styles.dot, isSelect ? styles.selectDot : null, isSelect ? selectedDotStyle : dotStyle[i]]}
                     key={i}
                 />
             )
