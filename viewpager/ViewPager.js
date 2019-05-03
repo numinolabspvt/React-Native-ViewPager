@@ -20,6 +20,7 @@ export default class ViewPager extends Component {
 
     static defaultProps = {
         initialPage: 0,
+        keyboardShouldPersistTaps:'handled',
         keyboardDismissMode: 'on-drag',
         onPageScroll: null,
         onPageSelected: null,
